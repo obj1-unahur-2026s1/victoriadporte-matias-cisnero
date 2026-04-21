@@ -7,7 +7,7 @@ object victoria {
     var disciplina = tenis
     var cantidadDeEntreanadores = 4
     var property altura = 160
-    var property edad = 22
+    var edad = 22
 
     method presupuesto() {
         return disciplina.presupuestoBase() + self.presupuestoPropio() + elemento.valor(self)
@@ -23,5 +23,11 @@ object victoria {
     }
     method cambiarCantidadDeEntrenadores(nuevaCantidad) {
         cantidadDeEntreanadores = nuevaCantidad
+    }
+    method edad() {
+        return edad
+    }
+    method cumplirAños() {
+        edad += 1
     }
 }
