@@ -2,7 +2,7 @@ import atletas.*
 
 object raqueta {
     method valor(unAtleta) {
-        return 3000.min(300 * unAtleta.edad())
+        return 3000.min(100 * unAtleta.edad())
     }
 }
 
